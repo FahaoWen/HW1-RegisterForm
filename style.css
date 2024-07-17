@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.formTitle {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 5px;
+}
+input {
+  height: 50px;
+  border-radius: 5px;
+  width: 100%;
+  padding-left: 15px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-color: rgb(207, 203, 203);
+}
+
+input:focus {
+  box-shadow: aqua;
+  border: solid;
+  border-color: aqua;
+}
+
+.nameCol,
+.passwordCol {
+  display: flex;
+  column-gap: 25px;
+}
+
+.buttons {
+  display: flex;
+  column-gap: 25px;
+}
+
+.firstName,
+.lastName {
+  width: 100%;
+  flex: 1;
+}
+.password,
+.confirmPassword {
+  width: 100%;
+  flex: 1;
+}
+
+.registerButton,
+.signInButton {
+  width: 100%;
+  flex: 1;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+label {
+  margin-right: 45px;
+  margin-left: 10px;
+}
+input::placeholder {
+  color: #ada6a6;
+  font-weight: bold;
+}
+
+.agreement {
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+button {
+  color: white;
+  height: 50px;
+  width: 100%;
+  border-radius: 7px;
+  border: none;
+}
+
+#register {
+  background-color: rgb(21, 120, 212);
+}
+#signIn {
+  background-color: rgb(29, 146, 107);
+}
+
+.register {
+  background-color: rgb(21, 120, 212);
+  color: white;
+  border-radius: 5px;
+  padding: 2px;
+}
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .container {
+    min-width: 280px;
+  }
+  .nameCol,
+  .passwordCol,
+  .buttons {
+    display: inline;
+    justify-content: space-between;
+    width: 100%;
+  }
+  button {
+    margin-bottom: 10px;
+  }
+}
